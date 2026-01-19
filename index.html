@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Product Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Product Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-section="dashboard">Dashboard</a></li>
+                <li><a href="#" class="nav-link" data-section="creation">Product Creation</a></li>
+                <li><a href="#" class="nav-link" data-section="marketing">Marketing</a></li>
+                <li><a href="#" class="nav-link" data-section="sales">Sales</a></li>
+                <li><a href="#" class="nav-link" data-section="analytics">Analytics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="content-section active">
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Total Products</h3>
+                    <p id="total-products-count">0</p>
+                </div>
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p id="total-sales-count">$0</p>
+                </div>
+                <div class="card">
+                    <h3>Active Campaigns</h3>
+                    <p id="active-campaigns-count">0</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Orders</h3>
+                    <p id="pending-orders-count">0</p>
+                </div>
+            </div>
+            
+            <div class="recent-activity">
+                <h2>Recent Activity</h2>
+                <div id="recent-activity-list"></div>
+            </div>
+        </section>
+
+        <!-- Product Creation Section -->
+        <section id="creation" class="content-section">
+            <h2>Product Creation Department</h2>
+            <div class="form-container">
+                <form id="product-form">
+                    <div class="form-group">
+                        <label for="product-name">Product Name:</label>
+                        <input type="text" id="product-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-description">Description:</label>
+                        <textarea id="product-description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price">Price ($):</label>
+                        <input type="number" id="product-price" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-category">Category:</label>
+                        <select id="product-category">
+                            <option value="software">Software</option>
+                            <option value="ebook">E-book</option>
+                            <option value="course">Online Course</option>
+                            <option value="template">Template</option>
+                            <option value="service">Service</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-file">Upload File:</label>
+                        <input type="file" id="product-file">
+                    </div>
+                    <button type="submit">Create Product</button>
+                </form>
+            </div>
+
+            <div class="products-list">
+                <h3>Created Products</h3>
+                <div id="products-table-container">
+                    <table id="products-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="products-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing Section -->
+        <section id="marketing" class="content-section">
+            <h2>Marketing Department</h2>
+            <div class="marketing-content">
+                <div class="form-container">
+                    <form id="campaign-form">
+                        <div class="form-group">
+                            <label for="campaign-name">Campaign Name:</label>
+                            <input type="text" id="campaign-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="campaign-type">Campaign Type:</label>
+                            <select id="campaign-type">
+                                <option value="email">Email Marketing</option>
+                                <option value="social">Social Media</option>
+                                <option value="ad">Paid Ads</option>
+                                <option value="content">Content Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="campaign-target">Target Audience:</label>
+                            <input type="text" id="campaign-target" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="campaign-budget">Budget ($):</label>
+                            <input type="number" id="campaign-budget" step="0.01" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="campaign-start">Start Date:</label>
+                            <input type="date" id="campaign-start" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="campaign-end">End Date:</label>
+                            <input type="date" id="campaign-end" required>
+                        </div>
+                        <button type="submit">Create Campaign</button>
+                    </form>
+                </div>
+
+                <div class="campaigns-list">
+                    <h3>Active Campaigns</h3>
+                    <div id="campaigns-table-container">
+                        <table id="campaigns-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Budget</th>
+                                    <th>Dates</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="campaigns-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sales Section -->
+        <section id="sales" class="content-section">
+            <h2>Sales Department</h2>
+            <div class="sales-content">
+                <div class="form-container">
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="customer-name">Customer Name:</label>
+                            <input type="text" id="customer-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-email">Customer Email:</label>
+                            <input type="email" id="customer-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-product">Product:</label>
+                            <select id="order-product" required>
+                                <option value="">Select a product</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-amount">Amount ($):</label>
+                            <input type="number" id="order-amount" step="0.01" min="0" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-status">Status:</label>
+                            <select id="order-status">
+                                <option value="pending">Pending</option>
+                                <option value="completed">Completed</option>
+                                <option value="cancelled">Cancelled</option>
+                            </select>
+                        </div>
+                        <button type="submit">Create Order</button>
+                    </form>
+                </div>
+
+                <div class="orders-list">
+                    <h3>Orders</h3>
+                    <div id="orders-table-container">
+                        <table id="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics" class="content-section">
+            <h2>Analytics & Reports</h2>
+            <div class="analytics-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Monthly Revenue</h3>
+                        <p id="monthly-revenue">$0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Conversion Rate</h3>
+                        <p id="conversion-rate">0%</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Top Selling Product</h3>
+                        <p id="top-product">-</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Customer Satisfaction</h3>
+                        <p id="satisfaction-rate">0%</p>
+                    </div>
+                </div>
+
+                <div class="charts-container">
+                    <div class="chart">
+                        <h3>Sales Trend</h3>
+                        <canvas id="sales-chart"></canvas>
+                    </div>
+                    <div class="chart">
+                        <h3>Product Performance</h3>
+                        <canvas id="product-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
