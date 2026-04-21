@@ -1,0 +1,116 @@
+{
+  "campaign_name": "Premium Make Formula",
+  "niche": "Make Money Online",
+  "featured_product": "Software Tools",
+  "created_at": "2026-04-21 12:02:13",
+  "target_audience": {
+    "demographics": "Adults 25-55 interested in make money online",
+    "pain_points": [
+      "stuck in 9-5 job",
+      "need extra income",
+      "want financial freedom"
+    ],
+    "goals": [
+      "Find reliable make money online solutions",
+      "Save time and money",
+      "Get proven results"
+    ]
+  },
+  "content_pieces": {
+    "blog_posts": [
+      "Software Tools Review: Is It Worth The Hype? (Full Analysis)\n\n\ud83d\udc49 Transform Your Life Today!",
+      "5 Reasons Why Software Tools Changed My Life Forever\n\n\ud83d\udc49 Join Thousands of Happy Customers!",
+      "Top 10 Software Tools for 2026 - Complete Review & Buying Guide\n\n\ud83d\udc49 Claim Your Discount!"
+    ],
+    "social_media_posts": [
+      {
+        "day": 1,
+        "platform": "Twitter",
+        "content": "Can't believe the results I got with Software Tools! Link in bio \ud83d\udc46\n\n\ud83d\udc49 Transform Your Life Today!",
+        "hashtags": "#MakeMoneyOnline #AffiliateMarketing #ProductReview #Sponsored",
+        "best_time": "8:00 PM"
+      },
+      {
+        "day": 2,
+        "platform": "Instagram",
+        "content": "Limited time offer on Software Tools! Don't miss out! \ud83d\ude80\n\n\ud83d\udc49 Try Risk-Free!",
+        "hashtags": "#MakeMoneyOnline #AffiliateMarketing #ProductReview #Sponsored",
+        "best_time": "9:00 AM"
+      },
+      {
+        "day": 3,
+        "platform": "Instagram",
+        "content": "Stop wasting money on fake products. This Software Tools actually works! \ud83d\udcaf\n\n\ud83d\udc49 Start Today!",
+        "hashtags": "#MakeMoneyOnline #AffiliateMarketing #ProductReview #Sponsored",
+        "best_time": "6:00 PM"
+      },
+      {
+        "day": 4,
+        "platform": "LinkedIn",
+        "content": "\ud83d\udd25 Just discovered this amazing Software Tools! Game changer! #affiliate #review\n\n\ud83d\udc49 Claim Your Discount!",
+        "hashtags": "#MakeMoneyOnline #AffiliateMarketing #ProductReview #Sponsored",
+        "best_time": "12:00 PM"
+      },
+      {
+        "day": 5,
+        "platform": "Instagram",
+        "content": "Can't believe the results I got with Software Tools! Link in bio \ud83d\udc46\n\n\ud83d\udc49 Start Today!",
+        "hashtags": "#MakeMoneyOnline #AffiliateMarketing #ProductReview #Sponsored",
+        "best_time": "6:00 PM"
+      },
+      {
+        "day": 6,
+        "platform": "TikTok",
+        "content": "Stop wasting money on fake products. This Software Tools actually works! \ud83d\udcaf\n\n\ud83d\udc49 Get Yours Now!",
+        "hashtags": "#MakeMoneyOnline #AffiliateMarketing #ProductReview #Sponsored",
+        "best_time": "6:00 PM"
+      },
+      {
+        "day": 7,
+        "platform": "Twitter",
+        "content": "Can't believe the results I got with Software Tools! Link in bio \ud83d\udc46\n\n\ud83d\udc49 Limited Offer - Act Fast!",
+        "hashtags": "#MakeMoneyOnline #AffiliateMarketing #ProductReview #Sponsored",
+        "best_time": "6:00 PM"
+      }
+    ],
+    "email_sequence": [
+      {
+        "day": 1,
+        "subject": "Special discount inside: {product}",
+        "body": "Hey there!\n\nI wanted to share something that completely changed my approach to make money online.\n\nAfter trying countless solutions, I finally found Software Tools - and the results have been incredible!\n\nTry Risk-Free: [Your Affiliate Link]\n\nBest regards,\n[Your Name]"
+      },
+      {
+        "day": 2,
+        "subject": "My honest thoughts about {product}",
+        "body": "Hi again!\n\nRemember how I mentioned Software Tools yesterday?\n\nWell, I got so many questions that I decided to write a full review.\n\nHere's what makes it different from everything else...\n\n[Your Affiliate Link]\n\nTalk soon!"
+      },
+      {
+        "day": 3,
+        "subject": "Last chance: {product} at 50% off!",
+        "body": "Hello!\n\nQuick question: Are you still struggling with tired of scams?\n\nI was too, until I discovered Software Tools.\n\nDon't take my word for it - see the results yourself:\n\n[Your Affiliate Link]"
+      },
+      {
+        "day": 4,
+        "subject": "How {product} changed everything for me",
+        "body": "Hey!\n\nI almost forgot to mention - there's a special discount available right now for Software Tools!\n\nThis won't last long, so if you've been thinking about it...\n\nNow's the time: [Your Affiliate Link]"
+      },
+      {
+        "day": 5,
+        "subject": "You need to see this {product} review...",
+        "body": "Last chance!\n\nThis is my final email about Software Tools.\n\nIf you're ready to finally solve your make money online challenges, this is your opportunity.\n\nGet it here before the offer expires: [Your Affiliate Link]\n\nWishing you success!"
+      }
+    ]
+  },
+  "recommended_ctas": [
+    "Join Thousands of Happy Customers",
+    "Claim Your Discount",
+    "Limited Offer - Act Fast"
+  ],
+  "success_tips": [
+    "Always disclose your affiliate relationships",
+    "Provide genuine value before promoting",
+    "Test different content formats",
+    "Track your clicks and conversions",
+    "Build trust with your audience first"
+  ]
+}
