@@ -1,16 +1,15 @@
-```gitignore
+```
 # Compiled and build artifacts
 *.pyc
 __pycache__/
-*.o
-*.obj
-dist/
-build/
 
 # Dependencies
 .venv/
 venv/
 node_modules/
+dist/
+build/
+*.egg-info/
 
 # Logs and temp files
 *.log
@@ -20,12 +19,29 @@ node_modules/
 # Environment
 .env
 .env.local
-.env.*
+*.env.*
 
 # Editors
 .vscode/
 .idea/
 
-# Original rules preserved
-*.log
+# Coverage reports
+.coverage
+coverage/
+htmlcov/
+
+# Python cache
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Backup files
+*~
+*.bak
+*.old
+
+# OS specific
+.DS_Store
+Thumbs.db
 ```
